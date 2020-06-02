@@ -21,7 +21,7 @@ public class Hotel {
 	
 	public String reservation(int start,int end) {
 		
-		if(start < 0 || end>364) {
+		if(start < 0 || end>364 || start>end) {
 			return "Decline";
 		}
 		
